@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg"
+     viewBox="0 0 64 64"
+     width="64"
+     height="64">
+
+<style>
+.fan-rotor {
+    transform-origin: 32px 32px;
+    animation: fan-rotate 0.9s linear infinite;
+}
+
+@keyframes fan-rotate {
+    from { transform: rotate(0deg); }
+    to   { transform: rotate(360deg); }
+}
+
+.fan-blade {
+    fill: black;
+}
+
+.fan-center {
+    fill: black;
+}
+
+.fan-ring {
+    fill: none;
+    stroke: black;
+    stroke-width: 2;
+}
+</style>
+
+<!-- Vòng ngoài -->
+<circle class="fan-ring"
+        cx="32"
+        cy="32"
+        r="28"/>
+
+<!-- Cánh quạt -->
+<g class="fan-rotor">
+
+    <path class="fan-blade"
+          d="M32 32
+             C30 16 41 8 49 12
+             C55 15 52 27 38 32 Z"/>
+
+    <path class="fan-blade"
+          transform="rotate(120 32 32)"
+          d="M32 32
+             C30 16 41 8 49 12
+             C55 15 52 27 38 32 Z"/>
+
+    <path class="fan-blade"
+          transform="rotate(240 32 32)"
+          d="M32 32
+             C30 16 41 8 49 12
+             C55 15 52 27 38 32 Z"/>
+
+    <circle class="fan-center"
+            cx="32"
+            cy="32"
+            r="4"/>
+
+</g>
+
+</svg>
