@@ -4,23 +4,23 @@
 
   <!-- Ống -->
   <line x1="100" y1="10"
-        x2="100" y2="40"
+        x2="100" y2="50"
         stroke="currentColor"
         stroke-width="4"
         stroke-linecap="round"/>
 
   <!-- Đầu béc -->
   <circle cx="100"
-          cy="50"
-          r="5"
+          cy="60"
+          r="8"
           fill="currentColor"/>
 
   <!-- Hạt 1 -->
-  <circle cx="100" cy="55" r="1.8" fill="currentColor">
+  <circle cx="100" cy="55" r="2.8" fill="currentColor">
     <animateMotion dur="1.2s"
                    begin="0s"
                    repeatCount="indefinite"
-                   path="M0,0 L-55,95"/>
+                   path="M0,0 L-55,145"/>
     <animate attributeName="opacity"
              values="1;0"
              dur="1.2s"
@@ -28,11 +28,11 @@
   </circle>
 
   <!-- Hạt 2 -->
-  <circle cx="100" cy="55" r="1.5" fill="currentColor">
+  <circle cx="100" cy="55" r="2.8" fill="currentColor">
     <animateMotion dur="1.0s"
                    begin="0.15s"
                    repeatCount="indefinite"
-                   path="M0,0 L-40,105"/>
+                   path="M0,0 L-40,155"/>
     <animate attributeName="opacity"
              values="1;0"
              dur="1.0s"
@@ -41,11 +41,11 @@
   </circle>
 
   <!-- Hạt 3 -->
-  <circle cx="100" cy="55" r="2" fill="currentColor">
+  <circle cx="100" cy="55" r="3" fill="currentColor">
     <animateMotion dur="1.1s"
                    begin="0.3s"
                    repeatCount="indefinite"
-                   path="M0,0 L-20,110"/>
+                   path="M0,0 L-20,150"/>
     <animate attributeName="opacity"
              values="1;0"
              dur="1.1s"
@@ -54,11 +54,11 @@
   </circle>
 
   <!-- Hạt 4 -->
-  <circle cx="100" cy="55" r="1.6" fill="currentColor">
+  <circle cx="100" cy="55" r="3.2" fill="currentColor">
     <animateMotion dur="0.9s"
                    begin="0.45s"
                    repeatCount="indefinite"
-                   path="M0,0 L0,115"/>
+                   path="M0,0 L0,155"/>
     <animate attributeName="opacity"
              values="1;0"
              dur="0.9s"
@@ -67,11 +67,11 @@
   </circle>
 
   <!-- Hạt 5 -->
-  <circle cx="100" cy="55" r="1.8" fill="currentColor">
+  <circle cx="100" cy="55" r="3.1" fill="currentColor">
     <animateMotion dur="1.0s"
                    begin="0.2s"
                    repeatCount="indefinite"
-                   path="M0,0 L20,110"/>
+                   path="M0,0 L20,160"/>
     <animate attributeName="opacity"
              values="1;0"
              dur="1.0s"
@@ -80,11 +80,11 @@
   </circle>
 
   <!-- Hạt 6 -->
-  <circle cx="100" cy="55" r="1.6" fill="currentColor">
+  <circle cx="100" cy="55" r="2.9" fill="currentColor">
     <animateMotion dur="1.15s"
                    begin="0.55s"
                    repeatCount="indefinite"
-                   path="M0,0 L40,105"/>
+                   path="M0,0 L40,165"/>
     <animate attributeName="opacity"
              values="1;0"
              dur="1.15s"
@@ -93,11 +93,11 @@
   </circle>
 
   <!-- Hạt 7 -->
-  <circle cx="100" cy="55" r="1.8" fill="currentColor">
+  <circle cx="100" cy="55" r="3.1" fill="currentColor">
     <animateMotion dur="1.2s"
                    begin="0.75s"
                    repeatCount="indefinite"
-                   path="M0,0 L55,95"/>
+                   path="M0,0 L55,170"/>
     <animate attributeName="opacity"
              values="1;0"
              dur="1.2s"
