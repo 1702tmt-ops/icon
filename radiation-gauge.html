@@ -12,5 +12,5 @@ for(let i=0;i<=60;i++){let a=(-180+i*3)*Math.PI/180,r1=132,r2=i%5?124:118,x1=200
 let radiationValue=650,current=0,maxValue=1200;
 function loop(){current+=(radiationValue-current)*0.08;let ang=-90+current/maxValue*90;document.getElementById('needle').setAttribute('transform','rotate('+ang+' 200 200)');document.getElementById('value').textContent=Math.round(current);requestAnimationFrame(loop);}
 loop();
-setInterval(()=>radiationValue=yourvalua,3000);
+setInterval(()=>radiationValue=yourvalue,3000);
 </script></body></html>
