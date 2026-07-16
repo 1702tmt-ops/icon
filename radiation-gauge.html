@@ -10,7 +10,7 @@ html,body{margin:0;background:transparent;overflow:hidden;font-family:Arial}svg{
 const t=document.getElementById('ticks');
 for(let i=0;i<=60;i++){let a=(0+i*3)*Math.PI/180,r1=132,r2=i%5?124:118,x1=200+r1*Math.cos(a),y1=200+r1*Math.sin(a),x2=200+r2*Math.cos(a),y2=200+r2*Math.sin(a);let l=document.createElementNS('http://www.w3.org/2000/svg','line');l.setAttribute('x1',x1);l.setAttribute('y1',y1);l.setAttribute('x2',x2);l.setAttribute('y2',y2);l.setAttribute('stroke','#555');l.setAttribute('stroke-width',i%5?1:2);t.appendChild(l);}
 let radiationValue=650,current=0,maxValue=1200;
-function loop(){current+=(radiationValue-current)*0.08;let ang=-180+current/maxValue*180;document.getElementById('needle').setAttribute('transform','rotate('+ang+' 200 200)');document.getElementById('value').textContent=Math.round(current);requestAnimationFrame(loop);}
+function loop(){current+=(radiationValue-current)*0.08;let ang=0+current/maxValue*180;document.getElementById('needle').setAttribute('transform','rotate('+ang+' 200 200)');document.getElementById('value').textContent=Math.round(current);requestAnimationFrame(loop);}
 loop();
 setInterval(()=>radiationValue=Math.random()*1200,3000);
 </script></body></html>
