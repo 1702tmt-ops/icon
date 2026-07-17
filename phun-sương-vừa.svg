@@ -11,7 +11,7 @@
 
   <!-- Đầu béc -->
   <circle cx="100"
-          cy="80"
+          cy="100"
           r="28"
           fill="currentColor"/>
 
